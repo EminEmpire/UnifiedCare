@@ -1,0 +1,46 @@
+.dh-heading-lg {
+  font-weight: bold;
+  font-size: 120px;
+  color: #0257fe;
+}
+
+.dh-heading-sm {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.dh-highlight-left {
+  text-align: right;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+@media (max-width:991px) {
+  .dh-highlight-left {
+    border-right-style: none;
+  }
+}
+
+@media (max-width:767px) {
+  .dh-heading-lg {
+    font-weight: bold;
+    font-size: 70px;
+    color: #0257fe;
+  }
+}
+
+@media (max-width:767px) {
+  .dh-heading-sm {
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+
+.edi-title {
+  background: linear-gradient(rgba(86,51,65,0.42) 0%, rgba(86,51,65,0.37) 99%), url("../../assets/img/edibanner.webp") center 60% / cover;
+  filter: grayscale(0%) saturate(100%) sepia(0%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation: fadeIn 1s ease-out;
+}
+
