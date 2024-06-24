@@ -4,7 +4,7 @@
 }
 
 .invest {
-  background-image: url("invest.png");
+  background-image: url("../../assets/img/invest.png");
   background-size: cover;
   background-size: 520px 100px;
 }
@@ -324,7 +324,7 @@ rdmoreq {
 }
 
 .res-title {
-  background: linear-gradient(rgba(86,51,65,0.42) 0%, rgba(86,51,65,0.37) 99%), url("../../assets/img/unified-care_-london--75-1.webp") center 30% / cover;
+  background: linear-gradient(rgba(86,51,65,0.42) 0%, rgba(86,51,65,0.37) 99%), url("../../assets/img/8ee3e9f5-a39c-4edb-abe4-a4bc30b4d152.jpg") center 30% / cover;
   filter: grayscale(0%) saturate(100%) sepia(0%);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -524,5 +524,44 @@ rdmoreq {
 
 #whatsapp:hover {
   filter: brightness(43%) hue-rotate(0deg);
+}
+
+.ra1btn {
+  background: #41a4d8;
+  color: #ffffff;
+}
+
+.ra1btn:hover {
+  background: #81bad7;
+}
+
+.ra2btn {
+  background: #d09e00;
+  color: #ffffff;
+}
+
+.ra2btn:hover {
+  background: #ffe79c;
+  color: #000000;
+}
+
+.ra3btn {
+  background: #F0637B;
+  color: #ffffff;
+}
+
+.ra3btn:hover {
+  background: #f196a6;
+  color: #000000;
+}
+
+.ra4btn {
+  background: #a564d9;
+  color: #ffffff;
+}
+
+.ra4btn:hover {
+  background: #b585dc;
+  color: #0e0e0e;
 }
 

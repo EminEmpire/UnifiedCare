@@ -1,3 +1,11 @@
+.edi-title {
+  background: linear-gradient(rgba(86,51,65,0.42) 0%, rgba(86,51,65,0.37) 99%), url("../../assets/img/farm.jpg") center 30% / cover;
+  filter: grayscale(0%) saturate(100%) sepia(0%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation: fadeIn 1s ease-out;
+}
+
 .dh-heading-lg {
   font-weight: bold;
   font-size: 120px;
@@ -36,8 +44,8 @@
   }
 }
 
-.edi-title {
-  background: linear-gradient(rgba(86,51,65,0.42) 0%, rgba(86,51,65,0.37) 99%), url("../../assets/img/edibanner.webp") center 60% / cover;
+.resp-title {
+  background: linear-gradient(rgba(86,51,65,0.42) 0%, rgba(86,51,65,0.37) 99%), url("../../assets/img/unified-care_-london--75-1.webp") center 60% / cover;
   filter: grayscale(0%) saturate(100%) sepia(0%);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
