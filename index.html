@@ -218,7 +218,38 @@
                 </div>
             </div>
         </div>
+        <!-- Cookies Banner -->
+        <div id="cookie-banner" class="cookie-banner bg-dark text-white text-center py-3" style="position: fixed; bottom: 0; width: 100%; z-index: 1000; display: none;">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                <span style="font-size: 14px;">
+                    We use cookies to enhance your experience and for analytics to help improve our website and services. By clicking "Accept," you agree to this usage.
+                </span>
+                <button id="accept-cookies" class="btn btn-primary btn-sm">Accept</button>
+            </div>
+        </div>
+
+
+        
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptCookiesButton = document.getElementById('accept-cookies');
+        
+        if (!localStorage.getItem('cookiesAccepted')) {
+            cookieBanner.style.display = 'block';
+        }
+        
+        acceptCookiesButton.addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.style.display = 'none';
+            // Google Tag Manager setup trigger
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted'
+            });
+        });
+    });
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.min.js"></script>
