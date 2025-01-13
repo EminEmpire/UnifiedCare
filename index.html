@@ -220,20 +220,29 @@
         </div>
         <!-- Cookies Banner -->
         <div id="cookie-banner" class="cookie-banner bg-dark text-white text-center py-3" style="position: fixed; bottom: 0; width: 100%; z-index: 1000; display: none;">
-            <div class="container d-flex justify-content-between align-items-center flex-wrap">
-                <span style="font-size: 14px;" class="text-center w-100 mb-2 mb-md-0">
+            <div class="container d-flex align-items-center justify-content-between flex-wrap">
+                <span style="font-size: 14px;" class="text-left mb-2 mb-md-0">
                     We use cookies to enhance your experience and for analytics to help improve our website and services. By clicking "Accept," you agree to this usage.
                 </span>
-                <button id="accept-cookies" class="btn btn-primary btn-sm mx-auto mx-md-0">Accept</button>
+                <button id="accept-cookies" class="btn btn-primary btn-sm">Accept</button>
             </div>
         </div>
         <style>
-            @media (max-width: 576px) { 
+            @media (max-width: 576px) { /* Mobile devices */
                 #cookie-banner .container {
                     flex-direction: column;
                 }
                 #cookie-banner #accept-cookies {
                     margin-top: 10px;
+                }
+            }
+        
+            @media (min-width: 577px) { /* Larger screens */
+                #cookie-banner .container {
+                    flex-direction: row; /* Ensure row layout */
+                }
+                #cookie-banner #accept-cookies {
+                    margin-top: 0; /* Remove margin for alignment */
                 }
             }
         </style>
